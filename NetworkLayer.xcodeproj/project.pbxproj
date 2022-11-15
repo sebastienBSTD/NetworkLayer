@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		565D3EF228ECB008001F2B88 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D3EE928ECB008001F2B88 /* NetworkLayer.framework */; };
 		565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0128ECB17A001F2B88 /* SampleTests.swift */; };
-		565D3F0428ECB1DF001F2B88 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0328ECB1DF001F2B88 /* Sample.swift */; };
 		565D3F0628ECB2B2001F2B88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 565D3F0528ECB2B2001F2B88 /* README.md */; };
+		FA0EFF18292424EE00057C90 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF17292424EE00057C90 /* Ad.swift */; };
+		FA0EFF1A2924251600057C90 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF192924251600057C90 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		565D3EE928ECB008001F2B88 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3EF128ECB008001F2B88 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3F0128ECB17A001F2B88 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
-		565D3F0328ECB1DF001F2B88 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		565D3F0528ECB2B2001F2B88 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA0EFF17292424EE00057C90 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		FA0EFF192924251600057C90 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 		565D3EEB28ECB008001F2B88 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				565D3F0328ECB1DF001F2B88 /* Sample.swift */,
+				FA0EFF16292424CA00057C90 /* Model */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -83,6 +85,15 @@
 				565D3F0128ECB17A001F2B88 /* SampleTests.swift */,
 			);
 			path = NetworkLayerTests;
+			sourceTree = "<group>";
+		};
+		FA0EFF16292424CA00057C90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA0EFF17292424EE00057C90 /* Ad.swift */,
+				FA0EFF192924251600057C90 /* Category.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +157,7 @@
 				TargetAttributes = {
 					565D3EE828ECB008001F2B88 = {
 						CreatedOnToolsVersion = 14.0.1;
-						LastSwiftMigration = 1400;
+						LastSwiftMigration = 1410;
 					};
 					565D3EF028ECB008001F2B88 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -195,7 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565D3F0428ECB1DF001F2B88 /* Sample.swift in Sources */,
+				FA0EFF18292424EE00057C90 /* Ad.swift in Sources */,
+				FA0EFF1A2924251600057C90 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
