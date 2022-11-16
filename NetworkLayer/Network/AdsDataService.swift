@@ -8,7 +8,13 @@
 import Foundation
 
 class AdsDataService {
+    let session: URLSession
+    
     var urlString = "https://raw.githubusercontent.com/leboncoin/paperclip/master/listing.json"
+    
+    init(urlSession: URLSession = .shared) {
+        self.session = urlSession
+    }
 
     func fetchAds() async throws -> [Ad] {
         guard let url = URL(string: urlString) else {
@@ -16,7 +22,7 @@ class AdsDataService {
         }
 
         let urlRequest = URLRequest(url: url)
-        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        let (data, response) = try await session.data(for: urlRequest)
 
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw NetworkError.serverError
@@ -25,11 +31,4 @@ class AdsDataService {
         let decodedAds = try JSONDecoder().decode([Ad].self, from: data)
         return decodedAds
     }
-    
-    // fetchAds(url: URL déjé debale)
-    // fct decodage (model, data)
-    // class qui gere l'appel réseau, 2 appel reseau
-    // protocole pas sur le service
-    // test
-    // tdd test de comportement: status 200 ou ..., data, simuler pas de connexion
 }
