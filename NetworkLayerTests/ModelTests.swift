@@ -1,6 +1,6 @@
 import XCTest
 
-final class SampleTests: XCTestCase {
+final class ModelTests: XCTestCase {
 
     func test_sample() {
         // This file was created for instantiate the repository
