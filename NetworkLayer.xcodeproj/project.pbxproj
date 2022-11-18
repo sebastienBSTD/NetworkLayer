@@ -15,6 +15,7 @@
 		FA0EFF1D292426C700057C90 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF1C292426C700057C90 /* NetworkError.swift */; };
 		FA0EFF202924294B00057C90 /* AdsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF1F2924294B00057C90 /* AdsDataService.swift */; };
 		FA0EFF22292429A200057C90 /* AdCategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF21292429A200057C90 /* AdCategoriesService.swift */; };
+		FA0EFF2629277B1200057C90 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF2529277B1200057C90 /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		FA0EFF1C292426C700057C90 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		FA0EFF1F2924294B00057C90 /* AdsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsDataService.swift; sourceTree = "<group>"; };
 		FA0EFF21292429A200057C90 /* AdCategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCategoriesService.swift; sourceTree = "<group>"; };
+		FA0EFF2529277B1200057C90 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				FA0EFF1F2924294B00057C90 /* AdsDataService.swift */,
 				FA0EFF21292429A200057C90 /* AdCategoriesService.swift */,
+				FA0EFF2529277B1200057C90 /* NetworkHelper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				FA0EFF18292424EE00057C90 /* Ad.swift in Sources */,
 				FA0EFF202924294B00057C90 /* AdsDataService.swift in Sources */,
 				FA0EFF22292429A200057C90 /* AdCategoriesService.swift in Sources */,
+				FA0EFF2629277B1200057C90 /* NetworkHelper.swift in Sources */,
 				FA0EFF1A2924251600057C90 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,14 +21,8 @@ class AdCategoriesService {
             throw NetworkError.badUrl
         }
 
-        let urlRequest = URLRequest(url: url)
-        let (data, response) = try await session.data(for: urlRequest)
-
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw NetworkError.serverError
-        }
-
-        let decodedCategories = try JSONDecoder().decode([Category].self, from: data)
-        return decodedCategories
+        let result = try await NetworkHelper.network(url: url, session: session)
+        try NetworkHelper.handleResponse(response: result.response)
+        return try NetworkHelper.decode(data: result.data)
     }
 }

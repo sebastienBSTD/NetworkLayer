@@ -21,14 +21,8 @@ class AdsDataService {
             throw NetworkError.badUrl
         }
 
-        let urlRequest = URLRequest(url: url)
-        let (data, response) = try await session.data(for: urlRequest)
-
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-            throw NetworkError.serverError
-        }
-
-        let decodedAds = try JSONDecoder().decode([Ad].self, from: data)
-        return decodedAds
+        let result = try await NetworkHelper.network(url: url, session: session)
+        try NetworkHelper.handleResponse(response: result.response)
+        return try NetworkHelper.decode(data: result.data)
     }
 }
