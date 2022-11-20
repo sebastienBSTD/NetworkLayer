@@ -12,10 +12,10 @@ struct Ad: Codable {
     let title, description: String
     let price: Int
     let imagesURL: ImagesURL
-    let creationDate: Date
+    let creationDate: String
     let isUrgent: Bool
     let siret: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case categoryID = "category_id"

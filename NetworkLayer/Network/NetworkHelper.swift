@@ -13,13 +13,13 @@ class NetworkHelper {
         let (data, response) = try await session.data(for: urlRequest)
         return (data, response)
     }
-
+    
     static func handleResponse(response: URLResponse) throws {
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
             throw NetworkError.serverError
         }
     }
-
+    
     static func decode<T: Decodable>(data: Data) throws -> T {
         let decodedAds = try JSONDecoder().decode(T.self, from: data)
         return decodedAds

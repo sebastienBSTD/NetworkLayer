@@ -15,12 +15,12 @@ class AdsDataService {
     init(urlSession: URLSession = .shared) {
         self.session = urlSession
     }
-
+    
     func fetchAds() async throws -> [Ad] {
         guard let url = URL(string: urlString) else {
             throw NetworkError.badUrl
         }
-
+        
         let result = try await NetworkHelper.network(url: url, session: session)
         try NetworkHelper.handleResponse(response: result.response)
         return try NetworkHelper.decode(data: result.data)

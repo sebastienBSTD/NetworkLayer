@@ -19,6 +19,7 @@
 		FA0EFF2829279ADD00057C90 /* FakeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF2729279ADD00057C90 /* FakeModels.swift */; };
 		FA0EFF2C29279CB500057C90 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0EFF2B29279CB500057C90 /* Categories.json */; };
 		FA0EFF2E29279CD800057C90 /* Ads.json in Resources */ = {isa = PBXBuildFile; fileRef = FA0EFF2D29279CD800057C90 /* Ads.json */; };
+		FA0EFF3029292F4D00057C90 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EFF2F29292F4D00057C90 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		FA0EFF2729279ADD00057C90 /* FakeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModels.swift; sourceTree = "<group>"; };
 		FA0EFF2B29279CB500057C90 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 		FA0EFF2D29279CD800057C90 /* Ads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ads.json; sourceTree = "<group>"; };
+		FA0EFF2F29292F4D00057C90 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 		565D3EF528ECB008001F2B88 /* NetworkLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				565D3F0128ECB17A001F2B88 /* ModelTests.swift */,
+				FA0EFF2F29292F4D00057C90 /* MockURLProtocol.swift */,
 				FA0EFF2729279ADD00057C90 /* FakeModels.swift */,
+				565D3F0128ECB17A001F2B88 /* ModelTests.swift */,
 				FA0EFF2B29279CB500057C90 /* Categories.json */,
 				FA0EFF2D29279CD800057C90 /* Ads.json */,
 			);
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0EFF3029292F4D00057C90 /* MockURLProtocol.swift in Sources */,
 				FA0EFF2829279ADD00057C90 /* FakeModels.swift in Sources */,
 				565D3F0228ECB17A001F2B88 /* ModelTests.swift in Sources */,
 			);
@@ -463,7 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = YV7MJBA2GX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;
@@ -480,7 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = YV7MJBA2GX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;
