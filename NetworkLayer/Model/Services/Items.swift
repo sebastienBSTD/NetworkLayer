@@ -8,12 +8,10 @@
 import Foundation
 
 // MARK: - Item
+
 struct Item: Codable {
     let id: Int
     let name: String
 }
 
 typealias Items = [Item]
-
-
-

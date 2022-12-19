@@ -8,7 +8,8 @@
 import Foundation
 
 // MARK: - Ad
-struct Ad: Codable {
+
+struct Ad: Identifiable, Decodable {
     let id, categoryID: Int
     let title, adDescription: String
     let price: Int
@@ -31,6 +32,7 @@ struct Ad: Codable {
 }
 
 // MARK: - ImagesURL
+
 struct ImagesURL: Codable {
     let small, thumb: String?
 }
