@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		443354FE294B5246004DEF6E /* Ads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443354FD294B5246004DEF6E /* Ads.swift */; };
+		44335501294B5735004DEF6E /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44335500294B5735004DEF6E /* AdService.swift */; };
+		447DE618294FBE78001270EE /* IdItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DE617294FBE78001270EE /* IdItemService.swift */; };
+		447DE61A29505CB1001270EE /* AdsList.json in Resources */ = {isa = PBXBuildFile; fileRef = 447DE61929505CB1001270EE /* AdsList.json */; };
+		447DE61C29505CF1001270EE /* IdList.json in Resources */ = {isa = PBXBuildFile; fileRef = 447DE61B29505CF1001270EE /* IdList.json */; };
 		565D3EF228ECB008001F2B88 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D3EE928ECB008001F2B88 /* NetworkLayer.framework */; };
 		565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0128ECB17A001F2B88 /* SampleTests.swift */; };
 		565D3F0428ECB1DF001F2B88 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0328ECB1DF001F2B88 /* Items.swift */; };
@@ -26,6 +30,10 @@
 
 /* Begin PBXFileReference section */
 		443354FD294B5246004DEF6E /* Ads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ads.swift; sourceTree = "<group>"; };
+		44335500294B5735004DEF6E /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		447DE617294FBE78001270EE /* IdItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdItemService.swift; sourceTree = "<group>"; };
+		447DE61929505CB1001270EE /* AdsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AdsList.json; sourceTree = "<group>"; };
+		447DE61B29505CF1001270EE /* IdList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IdList.json; sourceTree = "<group>"; };
 		565D3EE928ECB008001F2B88 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3EF128ECB008001F2B88 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3F0128ECB17A001F2B88 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
@@ -52,6 +60,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443354FF294B571E004DEF6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				447DE61E295062F6001270EE /* Services */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		447DE61D29505D93001270EE /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				447DE61929505CB1001270EE /* AdsList.json */,
+				447DE61B29505CF1001270EE /* IdList.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		447DE61E295062F6001270EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44335500294B5735004DEF6E /* AdService.swift */,
+				443354FD294B5246004DEF6E /* Ads.swift */,
+				447DE617294FBE78001270EE /* IdItemService.swift */,
+				565D3F0328ECB1DF001F2B88 /* Items.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		565D3EDF28ECB008001F2B88 = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +110,8 @@
 		565D3EEB28ECB008001F2B88 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				443354FD294B5246004DEF6E /* Ads.swift */,
-				565D3F0328ECB1DF001F2B88 /* Items.swift */,
+				443354FF294B571E004DEF6E /* Model */,
+				447DE61D29505D93001270EE /* Json */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -180,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447DE61C29505CF1001270EE /* IdList.json in Resources */,
+				447DE61A29505CB1001270EE /* AdsList.json in Resources */,
 				565D3F0628ECB2B2001F2B88 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +238,8 @@
 			files = (
 				443354FE294B5246004DEF6E /* Ads.swift in Sources */,
 				565D3F0428ECB1DF001F2B88 /* Items.swift in Sources */,
+				44335501294B5735004DEF6E /* AdService.swift in Sources */,
+				447DE618294FBE78001270EE /* IdItemService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
