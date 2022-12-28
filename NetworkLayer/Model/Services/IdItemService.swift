@@ -32,7 +32,7 @@ final class ItemSession: ItemService {
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(from: url)
         
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw NetworkError.undecodableData }
         let decodedItem = try JSONDecoder().decode(Item.self, from: data)
         print("-> \(decodedItem)")
     }

@@ -12,6 +12,8 @@
 		447DE618294FBE78001270EE /* IdItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DE617294FBE78001270EE /* IdItemService.swift */; };
 		447DE61A29505CB1001270EE /* AdsList.json in Resources */ = {isa = PBXBuildFile; fileRef = 447DE61929505CB1001270EE /* AdsList.json */; };
 		447DE61C29505CF1001270EE /* IdList.json in Resources */ = {isa = PBXBuildFile; fileRef = 447DE61B29505CF1001270EE /* IdList.json */; };
+		447DE622295C4DE7001270EE /* LoadAdsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DE621295C4DE7001270EE /* LoadAdsUseCaseTests.swift */; };
+		447DE624295C5A96001270EE /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447DE623295C5A96001270EE /* NetworkError.swift */; };
 		565D3EF228ECB008001F2B88 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565D3EE928ECB008001F2B88 /* NetworkLayer.framework */; };
 		565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0128ECB17A001F2B88 /* SampleTests.swift */; };
 		565D3F0428ECB1DF001F2B88 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D3F0328ECB1DF001F2B88 /* Items.swift */; };
@@ -34,6 +36,8 @@
 		447DE617294FBE78001270EE /* IdItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdItemService.swift; sourceTree = "<group>"; };
 		447DE61929505CB1001270EE /* AdsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AdsList.json; sourceTree = "<group>"; };
 		447DE61B29505CF1001270EE /* IdList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IdList.json; sourceTree = "<group>"; };
+		447DE621295C4DE7001270EE /* LoadAdsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadAdsUseCaseTests.swift; sourceTree = "<group>"; };
+		447DE623295C5A96001270EE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		565D3EE928ECB008001F2B88 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3EF128ECB008001F2B88 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565D3F0128ECB17A001F2B88 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		443354FF294B571E004DEF6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				447DE623295C5A96001270EE /* NetworkError.swift */,
 				447DE61E295062F6001270EE /* Services */,
 			);
 			path = Model;
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				565D3F0128ECB17A001F2B88 /* SampleTests.swift */,
+				447DE621295C4DE7001270EE /* LoadAdsUseCaseTests.swift */,
 			);
 			path = NetworkLayerTests;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				565D3F0428ECB1DF001F2B88 /* Items.swift in Sources */,
 				44335501294B5735004DEF6E /* AdService.swift in Sources */,
 				447DE618294FBE78001270EE /* IdItemService.swift in Sources */,
+				447DE624295C5A96001270EE /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447DE622295C4DE7001270EE /* LoadAdsUseCaseTests.swift in Sources */,
 				565D3F0228ECB17A001F2B88 /* SampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = K46AS943RY;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;
@@ -468,7 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8PJ45T947H;
+				DEVELOPMENT_TEAM = K46AS943RY;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.NetworkLayerTests;

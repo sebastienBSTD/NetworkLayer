@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Item
 
-struct Item: Codable {
+struct Item: Decodable {
     let id: Int
     let name: String
 }

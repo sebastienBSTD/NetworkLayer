@@ -11,7 +11,7 @@ import Foundation
 
 protocol AdService {
     
-    func fetchAdWithAsync() async throws
+    func fetchAdWithAsync(url: URL) async throws
     
 }
 
@@ -27,14 +27,22 @@ final class AdSession: AdService {
     
     // MARK: - Methods
     
-    func fetchAdWithAsync() async throws {
-        guard let url = URL(string: "https://raw.githubusercontent.com/leboncoin/paperclip/master/listing.json") else  { fatalError("Missing URL") }
-        let urlRequest = URLRequest(url: url)
-        let (data, response) = try await URLSession.shared.data(from: url)
+    func fetchAdWithAsync(url: URL) async throws {
+        //
+//        guard let url = U    RL(string: "https://raw.githubusercontent.com/leboncoin/paperclip/master/listing.json") else  { throw NSError() }
+//        let urlRequest = URLRequest(url: url)
+        //
         
+        //
+        let (data, response) = try await URLSession.shared.data(from: url)
+        //
+        
+        //
         guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
-        let decodedAd = try JSONDecoder().decode(Ad.self, from: data)
-        print("-> \(decodedAd)")
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        let decodedAd = try decoder.decode(Ad.self, from: data)
+        //
     }
     
 }
