@@ -8,6 +8,7 @@
 import Foundation
 
 final class URLProtocolFake: URLProtocol {
+    
     private struct Stub {
         let data: Data?
         let response: URLResponse?
