@@ -1,17 +1,17 @@
+////
+////  Items.swift
+////  NetworkLayer
+////
+////  Created by Nicolas Demange on 15/12/2022.
+////
 //
-//  Items.swift
-//  NetworkLayer
+//import Foundation
 //
-//  Created by Nicolas Demange on 15/12/2022.
+//// MARK: - Item
 //
-
-import Foundation
-
-// MARK: - Item
-
-struct Item: Decodable {
-    let id: Int
-    let name: String
-}
-
-typealias Items = [Item]
+//struct Item: Decodable {
+//    let id: Int
+//    let name: String
+//}
+//
+//typealias Items = [Item]
