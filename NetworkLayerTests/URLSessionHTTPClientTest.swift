@@ -64,25 +64,5 @@ final class URLSessionHTTPClientTest: XCTestCase {
             XCTFail("Expected data and response values")
         }
     }
-    
-    private func anyURL() -> URL {
-        URL(string: "http://www.an-url.com")!
-    }
-    
-    private func anyNSError() -> NSError {
-        NSError(domain: "error", code: 0)
-    }
-    
-    private func anyData() -> Data {
-        Data("any data".utf8)
-    }
-    
-    private func anyHTTPURLResponse() -> HTTPURLResponse {
-        HTTPURLResponse.init(url: anyURL(), statusCode: 200, httpVersion: .none, headerFields: .none)!
-    }
-    
-    private func nonHTTPURLResponse() -> URLResponse {
-        URLResponse.init(url: anyURL(), mimeType: .none, expectedContentLength: 0, textEncodingName: .none)
-    }
-    
+
 }
