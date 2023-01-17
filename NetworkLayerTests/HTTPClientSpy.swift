@@ -2,17 +2,22 @@
 //  HTTPClientSpy.swift
 //  NetworkLayerTests
 //
-//  Created by Nicolas Demange on 12/01/2023.
+//  Created by Nicolas Demange on 17/01/2023.
 //
 
 import Foundation
 @testable import NetworkLayer
 
-class HTTPClientSpy: HTTPClient {
+final class HTTPClientSpy: HTTPClient {
+    private(set) var urls: [URL] = []
+    private let result: Result<(Data, HTTPURLResponse), Error>
     
-    func data(from url: URL) async throws -> (Data, HTTPURLResponse) {
-        return (Data(), HTTPURLResponse(url: URL(string: "")!, statusCode: 300, httpVersion: .none, headerFields: .none)!)
+    init(result: Result<(Data, HTTPURLResponse), Error>) {
+        self.result = result
     }
     
-
+    func data(from url: URL) async throws -> (Data, HTTPURLResponse) {
+        urls.append(url)
+        return try result.get()
+    }
 }
